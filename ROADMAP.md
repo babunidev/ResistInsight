@@ -1,6 +1,10 @@
-# BuxbrewResist — roadmap
+# ResistInsight — roadmap
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
+
+## Project status — on hold
+
+This repository is the original **BuxbrewResist**, now named **ResistInsight**. My newer port is [ResistForever](https://github.com/babunidev/ResistForever). I am keeping this older project on ice, with its existing implementation and unverified technical tasks preserved for any later separate review. The tasks below are not work scheduled in this documentation pass.
 
 ## Current implementation
 
@@ -22,7 +26,7 @@ The following earlier record is retained verbatim. Statements about unavailable 
 
 # BuxbrewResist — roadmap
 
-**Author:** Babuni.dev
+**By:** Babuni
 
 ## Snapshot
 
