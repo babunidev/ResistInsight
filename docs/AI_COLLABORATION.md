@@ -1,8 +1,8 @@
-# BuxbrewResist — AI collaboration and attribution
+# ResistInsight — AI collaboration and attribution
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
 
-Babuni.dev is the human project author and holds creative direction. AI assistance on 2026-10-26 consisted of repository inspection, historical diff reading, analysis and documentation drafting. It did not originate the project, implement new runtime features or execute game tests in this pass. Earlier AI involvement cannot be inferred from existing code or generic commit messages.
+I directed the original BuxbrewResist project and selected **ResistInsight** as the new GitHub repository name. This original addon has already been ported into **ResistForever**, and I have put further work here on hold. My AI assistant handled the documentation revisions in November 2026; it did not implement or test another port in this pass. AI assistance on 2026-10-26 consisted of repository inspection, historical diff reading, analysis and documentation drafting. It did not originate the project, implement new runtime features or execute game tests in this pass. Earlier AI involvement cannot be inferred from existing code or generic commit messages.
 
 ## Record future collaboration
 
