@@ -1,13 +1,19 @@
-# BuxbrewResist — development journal
+# ResistInsight — development journal
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
+
+## November 2026 — from BuxbrewResist to ResistInsight
+
+This was my earlier WoW 1.12 resistance-tooltip experiment, originally named **BuxbrewResist**. I wanted to make resistance values easier to interpret, not just display a number. My newer project, [ResistForever](https://github.com/babunidev/ResistForever), is already ported from this predecessor. For now I am putting this version on ice and saving further technical changes for a separate chat.
+
+I renamed the GitHub repository **ResistInsight** to give the old addon a descriptive identity of its own. At my request, AI reviewed the existing documentation and revised the naming and historical context. No runtime files were changed, and no fresh in-game tests were performed during this documentation pass.
 
 ## Evidence-based retrospective — 2026-10-26
 
-- **2025-09-10** — [f29a611](https://github.com/babunidev/BuxbrewResist/commit/f29a611e292c9a3bddd1c1b491dd8b4dd1b45c40): Lua first added; many same-day generic Update commits follow. Titles alone do not establish individual fixes.
-- **2026-09-05** — [c421f1f](https://github.com/babunidev/BuxbrewResist/commit/c421f1f070e33437ea06e69b0cddf82fee5903d0): Inspected diff adds character-panel tooltip handling and a Python/Lupa test harness.
-- **2026-09-05** — [7a20e4a](https://github.com/babunidev/BuxbrewResist/commit/7a20e4a7f599b31dc95a1d3150966886a5ee3b87): Commit metadata records red negative-resistance vulnerability estimates.
-- **2026-09-07** — [53fc422](https://github.com/babunidev/BuxbrewResist/commit/53fc4220e5aa6fc4b08c7995573d1c3db2b57da6): Inspected diff layers base miss into total direct-damage reduction, moves explanations into chat and updates the test assertions.
+- **2025-09-10** — [f29a611](https://github.com/babunidev/ResistInsight/commit/f29a611e292c9a3bddd1c1b491dd8b4dd1b45c40): Lua first added; many same-day generic Update commits follow. Titles alone do not establish individual fixes.
+- **2026-09-05** — [c421f1f](https://github.com/babunidev/ResistInsight/commit/c421f1f070e33437ea06e69b0cddf82fee5903d0): Inspected diff adds character-panel tooltip handling and a Python/Lupa test harness.
+- **2026-09-05** — [7a20e4a](https://github.com/babunidev/ResistInsight/commit/7a20e4a7f599b31dc95a1d3150966886a5ee3b87): Commit metadata records red negative-resistance vulnerability estimates.
+- **2026-09-07** — [53fc422](https://github.com/babunidev/ResistInsight/commit/53fc4220e5aa6fc4b08c7995573d1c3db2b57da6): Inspected diff layers base miss into total direct-damage reduction, moves explanations into chat and updates the test assertions.
 
 ## Present implementation and interpretation
 
@@ -19,7 +25,7 @@ Averages describe repeated hypothetical casts rather than a guaranteed next-hit 
 
 ## Evidence and status
 
-Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/BuxbrewResist/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
+Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
 
 ## Documentation authorship
 
@@ -31,7 +37,7 @@ The following earlier record is retained verbatim. Statements about unavailable 
 
 # BuxbrewResist — development journal
 
-**Author:** Babuni.dev
+**By:** Babuni
 
 ## Reconstructed snapshot (2026-10-26)
 
