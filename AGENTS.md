@@ -1,4 +1,4 @@
-# Development rules — BuxbrewResist
+# ResistInsight — development rules
 
 **By:** Babuni
 
