@@ -1,6 +1,6 @@
-# BuxbrewResist — decisions and evidence
+# ResistInsight — decisions and evidence
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
 
 | Implemented choice | Evidence | Interpretation boundary |
 | --- | --- | --- |
@@ -9,6 +9,10 @@
 | Separate vulnerability branch | negative resistance path | Server validation outstanding |
 | Preserve original hover handler | hook wrapper and guard | Other-addon coexistence untested |
 | Verify output with mocked Lua | `tests/test_tooltips.py` | Lua 5.1 harness is not a live WoW test |
+
+## November 2026 — naming and status
+
+I renamed my original **BuxbrewResist** repository to **ResistInsight**. It is the predecessor of the already-ported **ResistForever**. I am keeping the original implementation on hold and reserving future development for a separate chat. My AI assistant updated documentation only, without changing game logic or verifying runtime behavior.
 
 ## Open verification
 
