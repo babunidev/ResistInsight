@@ -1,41 +1,29 @@
-# ResistInsight — decisions and evidence
+# ResistInsight — decisions
 
 **By:** Babuni
 
-| Implemented choice | Evidence | Interpretation boundary |
+## Confirmed creative decisions
+
+| Decision | Rationale and boundary |
+| --- | --- |
+| Explain resistance values in tooltips | The default WoW 1.12 character panel did not explain enough; making the addon also helped me learn the mechanics |
+| Retain the historical installed addon identity | GitHub is named `ResistInsight`, but the addon still installs as `BuxbrewResist` and uses `/buxres` |
+| Consider the original addon finished | Further features are not planned; "on hold" applies to new development |
+| Accept maintenance reports | Players can contact `babunigaming@gmail.com` with reproducible issues, without an implied release schedule |
+| Keep ResistForever separate | The later port has its own client target, implementation history and mathematical assumptions |
+
+These decisions were clarified directly in November 2026. They do not imply that all earlier implementation choices were documented as explicit personal approvals.
+
+## Observed implementation choices
+
+| Source behavior | Evidence | Limit |
 | --- | --- | --- |
-| Shared weighted bucket average | `expectedReduction` | Legacy estimate, not measured distribution |
-| Combine misses multiplicatively | `totalReduction` | Assumed hit scenario; not universal spell behavior |
-| Separate vulnerability branch | negative resistance path | Server validation outstanding |
-| Preserve original hover handler | hook wrapper and guard | Other-addon coexistence untested |
-| Verify output with mocked Lua | `tests/test_tooltips.py` | Lua 5.1 harness is not a live WoW test |
+| Weighted partial-resist outcomes | `buildBuckets`, `expectedReduction` | Approximate distribution, not measured server probabilities |
+| Multiplicative combination of misses and resistance | `totalReduction` | Assumed direct-damage scenario |
+| Separate negative-resistance vulnerability path | Negative resistance calculations | Actual server behavior unverified |
+| Preserve existing hover handlers | Tooltip hook wrapper and guard | Coexistence with all addons untested |
+| Mocked Lua verification harness | `tests/test_tooltips.py` | Not an in-client compatibility test |
 
-## November 2026 — naming and status
+## Deferred investigations, not approved work
 
-I renamed my original **BuxbrewResist** repository to **ResistInsight**. It is the predecessor of the already-ported **ResistForever**. I am keeping the original implementation on hold and reserving future development for a separate chat. My AI assistant updated documentation only, without changing game logic or verifying runtime behavior.
-
-## Open verification
-
-- Run the existing Lupa test with Lua 5.1 support and record the exact command/result; a mocked harness cannot validate the 1.12 client.
-- Verify tooltip positions, existing handler preservation, repeated initialization and interaction with other character-panel addons in game.
-- Compare estimates with controlled server observations before claiming probability accuracy; the legacy bucket model and miss assumptions remain unverified.
-- Validate negative resistance, low levels, caps, missing stats and spell-specific binary/DoT behavior separately.
-- Keep screenshots and wording synchronized after future UI changes; TOC BuxResDB is declared but unused.
-
-These are source-observed choices and proposed checks, not invented historical approvals or an approved feature backlog.
-
-## Preserved earlier documentation
-
-The following earlier record is retained verbatim. Statements about unavailable history or pending verification describe that earlier snapshot; the dated evidence above supplements it.
-
-# BuxbrewResist — design choices and evidence
-
-**Author:** Babuni.dev
-
-## Observable approach, not formal historic decision
-
-It distinguishes long-run averages from outcomes of individual spells and treats partial-resist and base spell miss explicitly.
-
-## Unverified
-
-Run the Python tooltip tests and verify tooltip positions, numbers, and limitations in the intended 1.12 client.
+Client compatibility, level edge cases, negative resistance, tooltip interactions, DoT/binary exceptions and model accuracy warrant investigation **only if maintenance requires it**. The November documentation pass made no gameplay change and ran no tests. See [ROADMAP.md](../ROADMAP.md) for the maintenance boundary.

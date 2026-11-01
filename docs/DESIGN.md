@@ -2,16 +2,14 @@
 
 **By:** Babuni
 
-My earlier addon aimed to make raw resistance ratings understandable. It is now documented as **ResistInsight**, the paused predecessor of **ResistForever**. This document describes the older version only.
+## Making a number meaningful
 
-The experience turns a raw resistance rating into understandable comparisons: an average, possible partial outcomes, +10 gain and a higher-level example. Compact tooltips end with the combined total; longer spell examples are in chat. Negative results are red and omit the probability table.
+The resistance stats on my warrior were interesting precisely because they could affect combat, yet the character panel left their meaning obscure. ResistInsight was conceived to answer the question at the point of use: **what might this resistance value actually do?** Working on those explanations also helped me understand the mechanic.
 
-Averages describe repeated hypothetical casts rather than a guaranteed next-hit reduction. Green/red color is supplemented by text labels and signs. DoT ticks and binary spell behavior require spell-specific treatment; the addon explicitly lacks verified rules for each spell. This is an interpretation of implemented presentation, not a recovered original design meeting.
+Instead of adding a separate interface, the addon extends the existing five magic-resistance tooltips. They show an estimated long-run average, possible partial-resist outcomes, the effect of another 10 resistance and a comparison against a higher-level caster. A compact total sits at the end; `/buxres` provides longer examples in chat. Negative resistance is shown as a red vulnerability estimate, without a misleading probability table.
 
-## Verification priorities
+## Boundaries of the presentation
 
-- Run the existing Lupa test with Lua 5.1 support and record the exact command/result; a mocked harness cannot validate the 1.12 client.
-- Verify tooltip positions, existing handler preservation, repeated initialization and interaction with other character-panel addons in game.
-- Compare estimates with controlled server observations before claiming probability accuracy; the legacy bucket model and miss assumptions remain unverified.
-- Validate negative resistance, low levels, caps, missing stats and spell-specific binary/DoT behavior separately.
-- Keep screenshots and wording synchronized after future UI changes; TOC BuxResDB is declared but unused.
+The visuals express estimates, not guarantees: one cast can behave differently from the displayed average. Red/green emphasis is accompanied by labels and signs. Base spell-miss assumptions, DoT ticks and binary spells require careful qualification because the addon does not verify every server's rules.
+
+Screenshots in the [README](../README.md#screenshots) illustrate the existing UI; they are not evidence of current runtime compatibility. The original interface is a completed design, not a proposal for additional features. Bug-related presentation changes remain possible.

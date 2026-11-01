@@ -1,13 +1,17 @@
 # ResistInsight — AI collaboration and attribution
 
-**By:** Babuni
+**Creative:** Babuni
 
-I directed the original BuxbrewResist project and selected **ResistInsight** as the new GitHub repository name. This original addon has already been ported into **ResistForever**, and I have put further work here on hold. My AI assistant handled the documentation revisions in November 2026; it did not implement or test another port in this pass. AI assistance on 2026-10-26 consisted of repository inspection, historical diff reading, analysis and documentation drafting. It did not originate the project, implement new runtime features or execute game tests in this pass. Earlier AI involvement cannot be inferred from existing code or generic commit messages.
+ResistInsight began with my experience playing a warrior on a private World of Warcraft server. The original idea was to make resistance ratings understandable in the tooltips, and the work taught me more about the mechanics. The decision to rename the original BuxbrewResist repository, preserve it as a finished addon and keep the ResistForever port separate was also mine.
 
-## Record future collaboration
+## Documented AI contributions
 
-For each material change record: date; Babuni.dev's direction; AI proposal or contribution; acceptance/rejection if explicitly recorded; commit and affected paths; tests actually performed with environment/results; unresolved questions. Do not manufacture private design conversations or imply approval from code presence.
+On **2026-10-26**, AI inspected repository files and selected historical diffs, then drafted source-based documentation. On **2026-11-01**, at my direction, AI updated naming, reviewed the documents and incorporated my newly described motivation, user support policy and maintenance-only status. Neither documentation session added gameplay features or ran in-client tests.
 
-## Verification boundary
+The original development may have involved AI assistance, but existing source and generic commit messages do not reliably identify every earlier contribution. The historical code should not be credited wholesale to either party without evidence.
 
-Documentation checks cover file presence, links, source consistency and documentation-only diffs. They do not certify installation, gameplay, server mechanics or compatibility. The existing Lupa harness runs mocked Lua 5.1; it was inspected but not run in this pass.
+## Documentation standard
+
+Record the human creative's motivation and decisions, the AI's specific research, design, coding or writing contribution, any important iteration, relevant commit and actual verification. Distinguish personal recollection from source-based reconstruction. Avoid publishing private conversations or presenting AI-assisted implementation as code personally written by the creative.
+
+Documentation consistency checks do not certify gameplay behavior, mathematical accuracy or compatibility with current Turtle WoW / Octo WoW clients. The original addon's identifiers remain unchanged.

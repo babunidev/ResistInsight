@@ -1,27 +1,34 @@
-# ResistInsight — development rules
+# ResistInsight — contribution and documentation rules
 
-**By:** Babuni
+**Creative:** Babuni  
+**Repository:** `babunidev/ResistInsight`  
+**Installed addon:** `BuxbrewResist`  
+**Status:** Finished; maintenance only
 
-**Project status:** On hold. Original project identity: `BuxbrewResist`. GitHub identity: `ResistInsight`. Newer port: [ResistForever](https://github.com/babunidev/ResistForever). Technical development is deferred to a separate project chat.
+## Boundaries
 
-Preserve the project's distinctive intent and historical evidence. Separate Babuni.dev's original direction from AI-supported coding/documentation. Treat source inspection as implementation evidence, not runtime confirmation. Track accepted/proposed/tested status honestly. Update docs beside material code edits; keep any third-party credit.
+- The project originated from Babuni's interest in resistance mechanics while playing a warrior on a private World of Warcraft server. The addon made tooltip values easier to understand; creating it also helped Babuni learn the mechanics.
+- No proactive feature roadmap is planned. Player-reported bugs or compatibility problems may receive fixes, coordinated via **babunigaming@gmail.com**.
+- The audience includes compatible WoW 1.12 private-server clients, notably Turtle WoW / Octo WoW. Do not promise untested current compatibility.
+- [ResistForever](https://github.com/babunidev/ResistForever) is the later port, not the same runtime or necessarily the same resistance model. Keep the projects distinct.
+- Retain `BuxbrewResist.lua`, `BuxbrewResist.toc`, the addon folder, manifest identity and `/buxres` unless a separate technical decision explicitly changes them.
 
-## Evidence and maintenance rules
+## Authorship and writing
 
-- Read the actual branch, Lua, TOC, README and relevant dated diffs before editing. Keep source behavior, proposals and tested results separate.
-- Preserve Babuni.dev as project author; identify AI drafting, analysis or code assistance separately. Preserve historical records, aliases, license terms and third-party credit.
-- Never treat a comment, version label or manifest interface as proof of runtime compatibility. Never claim tests were run without recording the command, environment and outcome.
-- For material changes update README, CONCEPT, ROADMAP, CHANGELOG and docs/DEVLOG, plus architecture/design/content where affected. Link evidence and retain uncertainty.
-- Documentation-only work must not change Lua, TOC, tests or assets. Check the diff and all relative documentation links before publishing.
+- Use **Babuni** for human attribution; **babuni.dev** is the portfolio platform. Use **creative**, not **creator**, as the role label.
+- Public-facing accounts of motivation, decisions and development belong in Babuni's **first-person perspective**. Do **not** begin a narrative sentence with `I` or `My`; integrate first-person language naturally. Neutral technical prose is appropriate for instructions or architecture.
+- Identify the human creative's direction separately from AI drafting, research or coding. Do not imply that Babuni wrote code AI generated, that AI conceived the project, or that any AI proposal was approved without evidence.
+- Keep journal entries brief, specific and human-readable; preserve meaningful history without reproducing redundant archival snapshots. Mark retrospective reconstruction where needed.
+- Keep source-observed behavior, personal recollection, proposals and tests distinct. Never make up conversations, implementations, compatibility results or historical approval.
 
-## Repository-specific constraints
+## Technical integrity
 
-- Run the existing Lupa test with Lua 5.1 support and record the exact command/result; a mocked harness cannot validate the 1.12 client.
-- Verify tooltip positions, existing handler preservation, repeated initialization and interaction with other character-panel addons in game.
-- Compare estimates with controlled server observations before claiming probability accuracy; the legacy bucket model and miss assumptions remain unverified.
-- Validate negative resistance, low levels, caps, missing stats and spell-specific binary/DoT behavior separately.
-- Keep screenshots and wording synchronized after future UI changes; TOC BuxResDB is declared but unused.
+- Check `BuxbrewResist.lua`, the TOC, tests, relevant diffs and current branch before making behavioral claims.
+- This is a legacy approximate model, not verified server probability data. Do not conflate partial resist, full spell failure, binary mechanics and DoT behavior.
+- A passing mocked Lupa/Lua 5.1 test is not confirmation that the addon works in a current 1.12 client.
+- On a reported defect, investigate tooltip hooks, frame IDs, level-dependent calculations, caps and other addons as relevant. Record the test command, environment and result rather than claiming verification from source alone.
+- For substantial maintenance, update README, CHANGELOG, docs/DEVLOG and affected technical docs alongside code. For documentation-only changes, leave Lua, TOC, tests and screenshots untouched. Verify links and changed paths.
 
-## Writing perspective and identity
+## Documentation layout
 
-Use **Babuni** as the person's name; **babuni.dev** names the portfolio and development platform. Write creative direction, motivations, and development accounts from Babuni's first-person viewpoint, without starting narrative sentences with `I` or `My`. Describe AI as the assistant Babuni directed; preserve clear attribution of proposals, code, documentation, and verification. Neutral technical reference prose is acceptable. Never invent original conversations or conflate the historical 1.12 model with ResistForever's current rules. Keep installed-addon identifiers unchanged until a separate implementation decision.
+`README.md` describes installation and usage; `CONCEPT.md` captures the creative origin; `ROADMAP.md` defines maintenance status; `CHANGELOG.md` records changes. The `docs/` directory holds development history, decisions, design, architecture, content and AI attribution.

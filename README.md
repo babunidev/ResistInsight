@@ -1,14 +1,20 @@
 # ResistInsight
 
-**By:** Babuni
+**By:** Babuni  
+**Status:** Finished; maintenance only  
+**Formerly:** BuxbrewResist
 
-**Formerly BuxbrewResist.** This is my original resistance-explanation addon for the WoW 1.12 client and the predecessor of [ResistForever](https://github.com/babunidev/ResistForever), to which I have already ported the project. The original project is now **on hold**. Further development and verification of this older version belong to a separate project chat.
+While playing a warrior on a private World of Warcraft server, resistances became one of the mechanics I most enjoyed. The character panel showed resistance values but did little to explain what they meant in a fight. Making this small addon helped me understand the calculations myself, then put that explanation somewhere useful: directly into the tooltips.
 
-The GitHub repository is now named **ResistInsight**, while the installed addon keeps its historical `BuxbrewResist` filenames and `/buxres` command. The historical installation instructions below intentionally preserve those names.
+**ResistInsight** is my original WoW 1.12 resistance-explanation addon. It adds estimated damage reduction, partial-resist outcomes and comparisons to the character panel, with more detail available through `/buxres`. Even as a niche project, making it was particularly rewarding.
 
-See what your resistance stats could mean in combat. BuxbrewResist adds estimated damage reduction and partial-resist chances to the resistance tooltips in your character panel. You can also check your stats in chat with `/buxres`.
+This version began as **BuxbrewResist** and later became the predecessor of [ResistForever](https://github.com/babunidev/ResistForever), which has already been ported for a different game client. The two projects must not be treated as mechanically identical. ResistInsight is finished as a personal project: **no further features are planned**, but bugs and compatibility problems reported by players can still receive fixes.
 
-Designed for the WoW 1.12 client.
+The repository was renamed to **ResistInsight** without changing the installed addon's historical `BuxbrewResist` filenames, folder name, TOC title or `/buxres` command. These are intentional, not leftovers to rename blindly.
+
+The addon was made for a private-server WoW 1.12 environment, including the Turtle WoW / Octo WoW audience. Current compatibility with every server version or launcher has not been retested during this documentation update.
+
+For a problem with the existing addon, contact **babunigaming@gmail.com**. Include the game/client version, the symptom and how to reproduce it. Maintenance is reactive rather than a scheduled development effort.
 
 ## Installation
 
@@ -84,9 +90,10 @@ These numbers come from a legacy approximation, **not measured server probabilit
 
 For readers interested in the calculation, the model starts with `min(0.75, max(0, resistance / (5 * max(attackerLevel, 20)) * 0.75))`, builds a distribution of partial-resist outcomes, and weights each outcome by its chance. The displayed average can differ from that starting value. Chat, tooltips, and the +10 comparison use the same weighted-average calculation.
 
-Implementation references:
-
 For negative resistance, the vulnerability estimate is `resistance / (5 * max(playerLevel, 20))`. This follows the CMaNGOS Classic reference implementation: it uses your level and does not apply the positive-resistance formula's 0.75 multiplier. Actual server behavior has not been verified. The same negative estimate is used in tooltips and chat.
+
+
+Implementation references:
 
 - [Vanilla character resistance tooltip scripts](https://github.com/MOUZU/Blizzard-WoW-Interface/blob/master/1.12.1/FrameXML/PaperDollFrame.xml)
 - [CMaNGOS Classic resistance implementation](https://github.com/cmangos/mangos-classic/blob/master/src/game/Entities/Unit.cpp), `CalculateEffectiveMagicResistancePercent` and `CalculateSpellResistChance`. This is a reference implementation, not confirmation of actual server behavior.
@@ -104,7 +111,7 @@ Shadow resistance:
 
 ## Evidence and status
 
-Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
+Original source audit: reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during that audit. On 2026-11-01, the documentation was revised to reflect my account of the project's origin and its finished, maintenance-only status. The existing source, tests, assets and addon metadata were not altered.
 
 ## Documentation
 

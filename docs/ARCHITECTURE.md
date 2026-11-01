@@ -1,29 +1,22 @@
 # ResistInsight — architecture
 
-**By:** Babuni
+**By:** Babuni  
+**Runtime:** WoW 1.12 addon, installed as `BuxbrewResist`
 
-This is the legacy **BuxbrewResist** implementation in the repository now named **ResistInsight**. It is the predecessor of **ResistForever**, but its calculations must not be presented as the newer port's rules. Technical maintenance remains on hold.
+This records the original implementation. The later [ResistForever](https://github.com/babunidev/ResistForever) port must not inherit these assumptions without separate verification. The November 2026 revision changed documentation only.
 
-`BuxbrewResist.lua` keeps a school map and reads the second return value of `UnitResistance` as total resistance. For nonnegative values, `computeAverageResist` clamps `R / (5 * max(level, 20)) * 0.75` to 0–0.75. `buildBuckets` samples eleven points from 0 to 1 with triangular weights, normalizes them and groups into 0/25/50/75/100% outcomes. `expectedReduction` weights those buckets; the result need not equal the initial clamped value.
+## Resistance estimates
 
-Negative resistance uses `R / (5 * max(playerLevel, 20))`, without the positive formula's 0.75 multiplier; it is vulnerability, not a negative probability. `totalReduction` combines assumed spell misses using `miss + (1 - miss) * average`. Same-level miss is 4%; the level+3 example uses 1%. Attacker hit, penetration and spell-specific flags are unknown. The binary rejection explanation uses a separate capped additive reference formula; it must not be substituted for the direct-damage total.
+`BuxbrewResist.lua` maps magic schools and reads the total resistance from the second return value of `UnitResistance`. For nonnegative values, `computeAverageResist` clamps `R / (5 * max(level, 20)) * 0.75` to 0–0.75. `buildBuckets` samples eleven points with triangular weights, normalizes and groups them into 0%, 25%, 50%, 75% and 100% resist outcomes. `expectedReduction` weights those outcomes, so the result need not equal the initial clamped figure.
 
-Tooltips hook `MagicResFrame1..5` while preserving the prior OnEnter handler and legacy global `this`. School identity comes from `frame:GetID()`, not display order. Ownership and missing values are checked. A per-frame flag avoids repeated hooks; installation runs immediately and on ADDON_LOADED/PLAYER_LOGIN. Values are read on each hover.
+Negative resistance follows a separate `R / (5 * max(playerLevel, 20))` vulnerability approximation, without the positive model's 0.75 multiplier. `totalReduction` calculates `miss + (1 - miss) * average` with an assumed 4% same-level base miss and 1% for the level+3 comparison. The binary rejection explanation uses a different, capped additive reference formula. None of these calculations is a verified universal probability model for private servers.
 
-Slash parsing trims/lowercases input and compares literal prefixes, rejects ambiguous matches and routes Physical/Holy to separate summaries. TOC version is 1.2 and declares `BuxResDB`, but the inspected Lua does not use that DB. Screenshots are examples, not proof of current client operation.
+## Interface and commands
 
-## Evidence and status
+Tooltips hook `MagicResFrame1..5`, preserve the previous `OnEnter` handler and use legacy global `this`. School identity comes from `frame:GetID()`, not visible order. Checks for ownership and missing values protect some edge cases; a per-frame flag guards against repeated hooks. Hook installation runs immediately and on `ADDON_LOADED` / `PLAYER_LOGIN`. Values are refreshed on hover.
 
-Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
+`/buxres` accepts school names and unambiguous prefixes; Physical and Holy use separate summaries. The TOC declares interface `11200`, version `1.2` and a saved variable named `BuxResDB`; the inspected Lua does not use that variable.
 
-## Preserved earlier documentation
+## Evidence and verification
 
-The following earlier record is retained verbatim. Statements about unavailable history or pending verification describe that earlier snapshot; the dated evidence above supplements it.
-
-# BuxbrewResist — architecture
-
-**Author:** Babuni.dev
-
-BuxbrewResist.lua updates resistance tooltips and /buxres chat reports; README includes calculation guidance and screenshots; tests/test_tooltips.py is present.
-
-Source: README.md, addon manifest, named Lua code and any named test files. This is a static implementation reading.
+The source audit dated **2026-10-26** examined the Lua, TOC, README, test harness and selected commits at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). The November documentation revision rechecked the current source and metadata; neither audit established live gameplay compatibility or measured server behavior. The Python/Lupa test harness exists but was not executed in this pass.

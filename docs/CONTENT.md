@@ -2,10 +2,16 @@
 
 **By:** Babuni
 
-The original addon retains its historical `BuxbrewResist` source identifiers; the GitHub project is now **ResistInsight**. Further development is on hold after the port to **ResistForever**.
+The GitHub project is **ResistInsight**; existing player-facing addon identifiers are still `BuxbrewResist` and `/buxres`. This is intentional for a finished, maintenance-only WoW 1.12 addon.
 
-Player-facing material includes tooltip labels, school names, percentage rows and detailed chat examples using Shadow Bolt, Corruption and Frostbolt to explain categories. These examples do not establish every server's spell classification. Physical armor and Holy summaries are separate from the five magic-school partial buckets.
+## Player-facing material
 
-The README embeds `screenshots/nature-resistance.png` and `screenshots/shadow-resistance.png`. They were preserved unchanged and may predate later tooltip wording. No new art, game assets or translations were generated. Mathematical examples exclude crits, absorbs and other modifiers.
+- Resistance tooltip headings and percentages for Arcane, Fire, Nature, Frost and Shadow.
+- Estimated averages, 0/25/50/75/100% outcomes, +10 resistance comparisons and higher-level examples.
+- Separate Physical armor and Holy summaries in chat.
+- Explanatory spell examples involving Shadow Bolt, Corruption and Frostbolt. These are illustrations, not verified classifications for every server.
+- Two repository screenshots: `screenshots/nature-resistance.png` and `screenshots/shadow-resistance.png`.
 
-Game names and built-in game content remain separate from project authorship. No source strings or assets were changed in this documentation pass.
+Examples exclude crits, absorbs and other modifiers. The screenshots may reflect older wording and were not altered during the documentation revision. No game assets, localizations or program strings were changed.
+
+For documented player problems, the support address is **babunigaming@gmail.com**. No additional content development is scheduled.
