@@ -1,6 +1,8 @@
-# BuxbrewResist — content inventory
+# ResistInsight — content inventory
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
+
+The original addon retains its historical `BuxbrewResist` source identifiers; the GitHub project is now **ResistInsight**. Further development is on hold after the port to **ResistForever**.
 
 Player-facing material includes tooltip labels, school names, percentage rows and detailed chat examples using Shadow Bolt, Corruption and Frostbolt to explain categories. These examples do not establish every server's spell classification. Physical armor and Holy summaries are separate from the five magic-school partial buckets.
 
