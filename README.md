@@ -1,6 +1,10 @@
-# BuxbrewResist
+# ResistInsight
 
-**Author:** Babuni.dev
+**By:** Babuni
+
+**Formerly BuxbrewResist.** This is my original resistance-explanation addon for the WoW 1.12 client and the predecessor of [ResistForever](https://github.com/babunidev/ResistForever), to which I have already ported the project. The original project is now **on hold**. Further development and verification of this older version belong to a separate project chat.
+
+The GitHub repository is now named **ResistInsight**, while the installed addon keeps its historical `BuxbrewResist` filenames and `/buxres` command. The historical installation instructions below intentionally preserve those names.
 
 See what your resistance stats could mean in combat. BuxbrewResist adds estimated damage reduction and partial-resist chances to the resistance tooltips in your character panel. You can also check your stats in chat with `/buxres`.
 
@@ -100,7 +104,7 @@ Shadow resistance:
 
 ## Evidence and status
 
-Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/BuxbrewResist/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
+Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
 
 ## Documentation
 
