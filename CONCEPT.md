@@ -1,8 +1,10 @@
-# BuxbrewResist — concept
+# ResistInsight — concept
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
 
-A resistance explanation addon for WoW 1.12. It appends estimated mitigation to the five magic-resistance tooltips and provides `/buxres` chat reports. Its legacy bucket model is an approximation, not measured server probabilities or a verified universal spell model.
+I wanted to make resistance statistics understandable rather than leave them as opaque numbers. This older WoW 1.12 implementation has since become the predecessor to [ResistForever](https://github.com/babunidev/ResistForever), which I have already ported. I renamed this historical repository **ResistInsight** and put its further development on hold; later work belongs in a separate chat.
+
+The original source is a resistance explanation addon for WoW 1.12. It appends estimated mitigation to the five magic-resistance tooltips and provides `/buxres` chat reports. Its legacy bucket model is an approximation, not measured server probabilities or a verified universal spell model.
 
 The experience turns a raw resistance rating into understandable comparisons: an average, possible partial outcomes, +10 gain and a higher-level example. Compact tooltips end with the combined total; longer spell examples are in chat. Negative results are red and omit the probability table.
 
@@ -10,7 +12,7 @@ Averages describe repeated hypothetical casts rather than a guaranteed next-hit 
 
 ## Evidence and status
 
-Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/BuxbrewResist/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
+Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
 
 ## Preserved earlier documentation
 
@@ -18,7 +20,7 @@ The following earlier record is retained verbatim. Statements about unavailable 
 
 # BuxbrewResist — concept
 
-**Author:** Babuni.dev
+**By:** Babuni
 
 A Vanilla WoW resistance tooltip estimator that adds expected damage mitigation and partial-resist probabilities to the character sheet.
 
