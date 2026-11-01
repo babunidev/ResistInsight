@@ -1,6 +1,8 @@
 # Development rules — BuxbrewResist
 
-**Author:** Babuni.dev
+**By:** Babuni
+
+**Project status:** On hold. Original project identity: `BuxbrewResist`. GitHub identity: `ResistInsight`. Newer port: [ResistForever](https://github.com/babunidev/ResistForever). Technical development is deferred to a separate project chat.
 
 Preserve the project's distinctive intent and historical evidence. Separate Babuni.dev's original direction from AI-supported coding/documentation. Treat source inspection as implementation evidence, not runtime confirmation. Track accepted/proposed/tested status honestly. Update docs beside material code edits; keep any third-party credit.
 
@@ -19,3 +21,7 @@ Preserve the project's distinctive intent and historical evidence. Separate Babu
 - Compare estimates with controlled server observations before claiming probability accuracy; the legacy bucket model and miss assumptions remain unverified.
 - Validate negative resistance, low levels, caps, missing stats and spell-specific binary/DoT behavior separately.
 - Keep screenshots and wording synchronized after future UI changes; TOC BuxResDB is declared but unused.
+
+## Writing perspective and identity
+
+Use **Babuni** as the person's name; **babuni.dev** names the portfolio and development platform. Write creative direction, motivations, and development accounts from Babuni's first-person viewpoint, without starting narrative sentences with `I` or `My`. Describe AI as the assistant Babuni directed; preserve clear attribution of proposals, code, documentation, and verification. Neutral technical reference prose is acceptable. Never invent original conversations or conflate the historical 1.12 model with ResistForever's current rules. Keep installed-addon identifiers unchanged until a separate implementation decision.
