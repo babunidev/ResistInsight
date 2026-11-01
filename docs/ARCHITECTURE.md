@@ -1,6 +1,8 @@
-# BuxbrewResist — architecture
+# ResistInsight — architecture
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
+
+This is the legacy **BuxbrewResist** implementation in the repository now named **ResistInsight**. It is the predecessor of **ResistForever**, but its calculations must not be presented as the newer port's rules. Technical maintenance remains on hold.
 
 `BuxbrewResist.lua` keeps a school map and reads the second return value of `UnitResistance` as total resistance. For nonnegative values, `computeAverageResist` clamps `R / (5 * max(level, 20)) * 0.75` to 0–0.75. `buildBuckets` samples eleven points from 0 to 1 with triangular weights, normalizes them and groups into 0/25/50/75/100% outcomes. `expectedReduction` weights those buckets; the result need not equal the initial clamped value.
 
@@ -12,7 +14,7 @@ Slash parsing trims/lowercases input and compares literal prefixes, rejects ambi
 
 ## Evidence and status
 
-Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/BuxbrewResist/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
+Reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during this documentation pass.
 
 ## Preserved earlier documentation
 
