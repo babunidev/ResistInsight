@@ -1,6 +1,8 @@
-# BuxbrewResist — experience design
+# ResistInsight — experience design
 
-**Project author and creative direction:** Babuni.dev
+**By:** Babuni
+
+My earlier addon aimed to make raw resistance ratings understandable. It is now documented as **ResistInsight**, the paused predecessor of **ResistForever**. This document describes the older version only.
 
 The experience turns a raw resistance rating into understandable comparisons: an average, possible partial outcomes, +10 gain and a higher-level example. Compact tooltips end with the combined total; longer spell examples are in chat. Negative results are red and omit the probability table.
 
