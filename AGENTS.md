@@ -32,3 +32,7 @@
 ## Documentation layout
 
 `README.md` describes installation and usage; `CONCEPT.md` captures the creative origin; `ROADMAP.md` defines maintenance status; `CHANGELOG.md` records changes. The `docs/` directory holds development history, decisions, design, architecture, content and AI attribution.
+
+## Repository-local documentation standard
+
+Before writing or changing project documentation, read [docs/DOCUMENTATION.md](docs/DOCUMENTATION.md). These rules travel with this repository and do not depend on the babuni.dev ChatGPT Project. Preserve all project-specific technical, creative, canon, safety, licensing, and historical rules in this file; follow the linked standard for public first-person narrative, human–AI attribution, concise development journals, decision records, and evidence-based verification. **Babuni** is the human creative; **babuni.dev** is the website/portfolio, not the person. Preserve third-party credits and historical legal notices. References above to a dated “documentation-only audit” describe that past task, not a permanent ban on later authorized implementation.
