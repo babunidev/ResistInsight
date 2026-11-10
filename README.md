@@ -108,7 +108,6 @@ Shadow resistance:
 
 ![Shadow resistance tooltip showing average damage reduction and resist chances](screenshots/shadow-resistance.png)
 
-
 ## Evidence and status
 
 Original source audit: reviewed on 2026-10-26 against `main` at [0691901](https://github.com/babunidev/ResistInsight/commit/06919016c8e0e11041fb633920b507a91058dd97). Current Lua, TOC, README and dated commit history were inspected. Source describes implementation; it does not establish successful operation. Historical intent is reconstructed only where labeled. No in-client test or automated test was executed during that audit. On 2026-11-01, the documentation was revised to reflect my account of the project's origin and its finished, maintenance-only status. The existing source, tests, assets and addon metadata were not altered.
