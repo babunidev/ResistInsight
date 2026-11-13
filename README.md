@@ -119,3 +119,7 @@ Original source audit: reviewed on 2026-10-26 against `main` at [0691901](https:
 - [Architecture](docs/ARCHITECTURE.md) · [Decisions](docs/DECISIONS.md)
 - [Roadmap](ROADMAP.md) · [Changelog](CHANGELOG.md) · [Development journal](docs/DEVLOG.md)
 - [AI collaboration](docs/AI_COLLABORATION.md) · [Contributor instructions](AGENTS.md)
+
+## License
+
+Original addon software is licensed under [MIT](LICENSE). Game-owned and independently sourced media remain under their respective terms.
