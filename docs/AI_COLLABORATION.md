@@ -1,5 +1,7 @@
 # ResistInsight — AI collaboration and attribution
 
+Follow [the documentation standard](DOCUMENTATION.md) for first-person author voice throughout project documentation, factual changelogs, and naming the AI tool and verified model for each contribution.
+
 **Creative:** Babuni
 
 ResistInsight began with my experience playing a warrior on a private World of Warcraft server. The original idea was to make resistance ratings understandable in the tooltips, and the work taught me more about the mechanics. The decision to rename the original BuxbrewResist repository, preserve it as a finished addon and keep the ResistForever port separate was also mine.

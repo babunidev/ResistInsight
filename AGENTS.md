@@ -1,8 +1,8 @@
 # ResistInsight — contribution and documentation rules
 
-**Creative:** Babuni  
-**Repository:** `babunidev/ResistInsight`  
-**Installed addon:** `BuxbrewResist`  
+**Creative:** Babuni
+**Repository:** `babunidev/ResistInsight`
+**Installed addon:** `BuxbrewResist`
 **Status:** Finished; maintenance only
 
 ## Boundaries
@@ -16,7 +16,7 @@
 ## Authorship and writing
 
 - Use **Babuni** for human attribution; **babuni.dev** is the portfolio platform. Use **creative**, not **creator**, as the role label.
-- Public-facing accounts of motivation, decisions and development belong in Babuni's **first-person perspective**. Do **not** begin a narrative sentence with `I` or `My`; integrate first-person language naturally. Neutral technical prose is appropriate for instructions or architecture.
+- Public-facing accounts of motivation, decisions and development belong in Babuni's **first-person perspective**. Do **not** begin a narrative sentence with `I` or `My`; integrate first-person language naturally.
 - Identify the human creative's direction separately from AI drafting, research or coding. Do not imply that Babuni wrote code AI generated, that AI conceived the project, or that any AI proposal was approved without evidence.
 - Keep journal entries brief, specific and human-readable; preserve meaningful history without reproducing redundant archival snapshots. Mark retrospective reconstruction where needed.
 - Keep source-observed behavior, personal recollection, proposals and tests distinct. Never make up conversations, implementations, compatibility results or historical approval.
@@ -35,4 +35,4 @@
 
 ## Repository-local documentation standard
 
-Before writing or changing project documentation, read [docs/DOCUMENTATION.md](docs/DOCUMENTATION.md). These rules travel with this repository and do not depend on the babuni.dev ChatGPT Project. Preserve all project-specific technical, creative, canon, safety, licensing, and historical rules in this file; follow the linked standard for public first-person narrative, human–AI attribution, concise development journals, decision records, and evidence-based verification. **Babuni** is the human creative; **babuni.dev** is the website/portfolio, not the person. Preserve third-party credits and historical legal notices. References above to a dated “documentation-only audit” describe that past task, not a permanent ban on later authorized implementation.
+Follow [the documentation standard](docs/DOCUMENTATION.md) for first-person author voice throughout project documentation, factual changelogs, and naming the AI tool and verified model for each contribution. These rules travel with this repository and do not depend on the babuni.dev ChatGPT Project. Preserve all project-specific technical, creative, canon, safety, licensing, and historical rules in this file; follow the linked standard for public first-person narrative, human–AI attribution, concise development journals, decision records, and evidence-based verification. **Babuni** is the human creative; **babuni.dev** is the website/portfolio, not the person. Preserve third-party credits and historical legal notices. References above to a dated “documentation-only audit” describe that past task, not a permanent ban on later authorized implementation.
