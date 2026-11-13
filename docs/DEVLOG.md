@@ -15,3 +15,7 @@ With the old repository renamed **ResistInsight**, this original version feels c
 The implementation history is partly reconstructed from source and commit metadata, not from a complete record of the original design conversations. Lua appeared in September 2025; identifiable September 2026 changes include character-panel tooltip support, negative-resistance presentation and combined spell-miss estimates. The dated evidence is preserved in [CHANGELOG.md](../CHANGELOG.md).
 
 An October 2026 documentation review inspected source, tests and selected diffs without running the game or tests. The November revision adds my personal recollection of why the project began and clarifies its maintenance policy. AI helped review, structure and write these records; the original creative motivation was mine. Earlier coding assistance cannot be reconstructed confidently from generic commit names.
+
+## 2026-11-13 — Giving the repository clear permissions
+
+Public source alone did not explain what others could reuse, so I approved MIT for original addon code. AI assistance added the license and brought the project notes into agreement, without changing how the application runs. Other people's content retains its own terms.
