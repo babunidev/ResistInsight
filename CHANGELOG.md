@@ -29,3 +29,8 @@ Source-informed documentation was expanded to cover usage, concept, architecture
 - **2026-09-07:** [53fc422](https://github.com/babunidev/ResistInsight/commit/53fc4220e5aa6fc4b08c7995573d1c3db2b57da6) — inspected diff combines base spell misses with total direct-damage estimates, puts explanations into chat and adjusts tests.
 
 Dates are GitHub commit dates, not independently established release dates. Earlier documentation was partly retrospective; AI did not reconstruct undocumented discussions.
+
+## 2026-11-13 — License and rights
+
+- Established MIT for original addon software and updated repository documentation to explain the permission boundary.
+- Preserved third-party authorship and external assets' separate terms. No gameplay or runtime verification is claimed.
